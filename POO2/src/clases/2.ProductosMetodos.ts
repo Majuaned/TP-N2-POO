@@ -28,14 +28,11 @@ export class ListaProducto {
       
         if (productoEncontrado) {
 
-        let martin = productoEncontrado.precioXUnidad
-        console.log(martin)
-
-        //   console.log(`Este producto cuesta $${productoEncontrado.precioXUnidad} por unidad.`)
-        //   console.log(`A partir de ${productoEncontrado.minimoXCant} productos el precio de cada uno es de $${productoEncontrado.precioXUnidad*0.90}.`)
-        //   console.log(`Comprando ${productoEncontrado.minimoXBolsa} productos, cada uno le cuesta $${productoEncontrado.precioXUnidad*0.80}.`)
-        //   console.log(`Unidades disponibles: ${productoEncontrado.stock}`);
-        return martin
+          console.log(`Este producto cuesta $${productoEncontrado.precioXUnidad} por unidad.`)
+          console.log(`A partir de ${productoEncontrado.minimoXCant} productos el precio de cada uno es de $${productoEncontrado.precioXUnidad*0.90}.`)
+          console.log(`Comprando ${productoEncontrado.minimoXBolsa} productos, cada uno le cuesta $${productoEncontrado.precioXUnidad*0.80}.`)
+          console.log(`Unidades disponibles: ${productoEncontrado.stock}`);
+        
 
         } else {
             console.log(`El producto "${nombreProd}" no se encontró en la lista.`);

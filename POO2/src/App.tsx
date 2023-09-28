@@ -56,15 +56,6 @@ const venderProd = ()=>{
   
   setlistaprod(listaProd.getProd())
 
-  // listaProd.buscarProd(selector);
-
-  // alert(martin)
-  console.log(`${}`)
-  // let precio = listaprod.map()
-
-  // console.log(selector)
-  // console.log(contador)
-
 }
 
 useEffect(() => {
@@ -219,10 +210,6 @@ useEffect(() => {
             </div> : <div></div>
           } */}
           
-      </div>
-
-      <div className="card">
-
       </div>
 
     </>
