@@ -52,9 +52,15 @@ setStock('');
 //  *******************    FUNCION PARA VENDER    ****************************
 const venderProd = ()=>{
 
-  listaProd.venderProd(selector.toLowerCase(),parseInt(contador))
-  
+  // let precio = venderProd(selector.toLowerCase(),parseInt(contador))
+
+  const test = listaProd.venderProd(selector.toLowerCase(),parseInt(contador))
+  console.log(test)
+
+  setMensaje(test);
+
   setlistaprod(listaProd.getProd())
+  console.log(listaprod)
 
 }
 
@@ -174,6 +180,7 @@ useEffect(() => {
               <td>{prod.minimoXBolsa} unid</td>
               <td>{prod.stock}</td>
             </tr>))}
+            
         </table>
       </div> {/* **************************************** */}
             <br/>
@@ -188,6 +195,8 @@ useEffect(() => {
               </option>
             ))}
             </select>
+            
+         
           <br/>
           
           <label>Seleccione la Cantidad</label>
@@ -204,12 +213,12 @@ useEffect(() => {
             Vender Producto
           </button>
 
-          {/* {mensaje ? 
+          {mensaje ? 
             <div id='mensajeVentas'>
               <p>{mensaje}</p>
             </div> : <div></div>
-          } */}
-          
+          }
+
       </div>
 
     </>
@@ -217,3 +226,25 @@ useEffect(() => {
 }
 
 export default App
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  {listaprod.map((datos)=>(
+//   <div>
+//   <p>{datos.respuesta}</p>
+// </div>
+// ))}
